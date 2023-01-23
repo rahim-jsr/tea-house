@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              Manrope: ["Graphik", "sans-serif"],
+            },
+            backgroundImage: {
+              "background-gradient": [
+                "linear-gradient(270deg #FF0000 0%, #FF8938 100%)",
+              ],
+              "footer-texture": "url('/img/footer-texture.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header class="container-lg max-w-[1140px] mx-auto">
+      <div class="flex md:flex-row flex-col justify-center items-center py-16">
+        <div class="w-1/2">
+          <h1 class="text-7xl font-extrabold">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="my-8">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="py-4 px-5 text-white rounded-lg text-2xl font-bold bg-red-500 flex items-center"
+          >
+            Explore More <img class="ml-2" src="images/arrow.png" alt="" />
+          </button>
+        </div>
+        <div class="w-1/2">
+          <img class="w-9/12 mx-auto" src="images/banner.png" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
